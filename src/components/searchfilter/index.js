@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styled, { css } from "styled-components";
 
-import * as colors from "../../colors";
 import ExpandableFilter from "../../components/expandablefilter";
-import SearchBar from "../../components/searchbar";
 import { fetchByKeyword, fetchDiscover } from "../../fetcher";
 import Filter from "../../images/filter-icon.png";
 
@@ -25,7 +23,7 @@ const SearchFilters = (props) => {
     } else {
       fetchDiscover().then(props.setData);
     }
-  }, [searchValue, yearValue]);
+  }, [searchValue, yearValue, props.setData]);
 
   return (
     <FiltersWrapper>
@@ -44,6 +42,7 @@ const SearchFilters = (props) => {
               onClick={() =>
                 setFilterClicked((prevFilterClicked) => !prevFilterClicked)
               }
+              alt="filter"
               className={filterClicked ? "filter-yes" : "filter-no"}
             />
           </div>

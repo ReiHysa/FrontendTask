@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { NavLink as Link } from "react-router-dom";
 
 import * as colors from "../../colors";
@@ -22,13 +22,13 @@ const SideNavBar = () => {
         <SideNavMainLink className="menu_nav_link main_nav_link" to="/">
           <h3>Wesley</h3>
           <NavIcon arrow>
-            <img src={Arrow} />
+            <img src={Arrow} alt="arrow" />
           </NavIcon>
         </SideNavMainLink>
         <SideNavMainLink className="menu_nav_link" to="/discover">
           Discover
           <NavIcon search>
-            <img src={SearchWhite} />
+            <img src={SearchWhite} alt="search" />
           </NavIcon>
         </SideNavMainLink>
         <SideNavHeader>

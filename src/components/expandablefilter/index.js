@@ -19,7 +19,7 @@ const ExpandableFilter = (props) => {
     setGenre(props.props.genres);
     setRatings(props.props.ratings);
     setLanguage(props.props.languages);
-  }, [Value]);
+  }, [Value, props.props.genres, props.props.ratings, props.props.languages]);
 
   return (
     <>

@@ -18,6 +18,7 @@ a {
   background-color: $primaryColor;
 }
 .checkbox-container {
+  border: 2px solid red;
   display: flex;
   gap: 20px;
 }

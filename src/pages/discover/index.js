@@ -12,14 +12,14 @@ const Discover = () => {
   const [results, setResults] = useState(null);
   const [totalCount, setTotalCount] = useState(0);
   const [genreOptions, setGenreOptions] = useState();
-  const [ratingOptions, setRatingOptions] = useState([
+  const ratingOptions = [
     { id: 7.5, name: 7.5 },
     { id: 8, name: 8 },
     { id: 8.5, name: 8.5 },
     { id: 9, name: 9 },
     { id: 9.5, name: 9.5 },
     { id: 10, name: 10 },
-  ]);
+  ];
   const [languageOptions, setLanguageOptions] = useState([
     { id: "GR", name: "Greek" },
     { id: "EN", name: "English" },
