@@ -1,0 +1,255 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1em;
+  line-height: 1.3;
+  background-color: #f6f7f9;
+  color: #404e5f;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu_nav_link:hover {
+  background-color: #c4ca18;
+}
+
+.checkbox-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.cancel-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 35px;
+}
+
+.cancel {
+  text-align: center;
+  width: 25px;
+  color: white;
+  font-size: 25px;
+}
+
+.cancel:hover {
+  color: #c4ca18;
+}
+
+input,
+textarea {
+  font-family: "Lato", sans-serif;
+  background-color: transparent;
+}
+
+.movie-image {
+  height: 200px;
+}
+
+.movie-headers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 25px;
+  gap: 5px;
+  max-width: 70vw;
+}
+
+.movie-headers h2 {
+  min-width: 20px;
+  height: 37px;
+  overflow: hidden;
+}
+
+.movie-headers h3 {
+  color: white;
+  background-color: #c4ca18;
+  font-size: 15px;
+  padding: 3px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.genres {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.light-green-text {
+  color: #c4ca18;
+  font-size: 10px;
+}
+
+.overview {
+  height: 103px;
+  overflow: hidden;
+}
+
+.line {
+  width: 35px;
+  height: 4px;
+  background-color: black;
+  margin: 8px 0;
+  border-radius: 20px;
+}
+
+.line-container {
+  position: fixed;
+  top: 20px;
+  left: 40px;
+  z-index: 1;
+}
+
+.visable:hover {
+  cursor: pointer;
+}
+
+.search-component {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.search-component input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #c4ca18;
+  width: 80%;
+  color: #c4ca18;
+  padding: 10px;
+  font-size: 20px;
+  outline: none;
+}
+
+.search-component img {
+  border-bottom: 2px solid #c4ca18;
+  height: 30px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.year-input {
+  display: none;
+}
+
+.visible {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  position: relative;
+  left: 0px;
+}
+
+.visible img {
+  position: relative;
+  bottom: 13px;
+}
+
+.hidden {
+  position: relative;
+  left: -300px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.hide-content {
+  display: none;
+}
+
+@media only screen and (min-width: 1390px) {
+  .year-input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #c4ca18;
+    width: 80%;
+    color: #c4ca18;
+    padding: 10px;
+    font-size: 20px;
+    outline: none;
+  }
+  .search-component {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .search-component input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #c4ca18;
+    width: 80%;
+    color: #c4ca18;
+    padding: 10px;
+    font-size: 20px;
+    outline: none;
+  }
+  .search-component img {
+    display: none;
+  }
+  .discover-page t .title-disc {
+    position: relative;
+    left: 325px;
+  }
+  .hide-content {
+    display: block;
+    background-color: white;
+  }
+  .show-content {
+    background-color: white;
+  }
+  .discover-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .mov-fil {
+    width: 25%;
+    padding-left: 20px;
+    padding-top: 21px;
+  }
+  .mov-res {
+    width: 50%;
+    -webkit-transition: 0.5s ease-in;
+    transition: 0.5s ease-in;
+  }
+  .hidden {
+    left: 0px;
+  }
+  .hidden .cancel {
+    display: none;
+  }
+}
+/*# sourceMappingURL=app.css.map */
